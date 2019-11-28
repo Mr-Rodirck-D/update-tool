@@ -230,7 +230,7 @@ public class updateBattery {
 						InUseProcessMap.put(j, i);
 						continue flag;
 					}
-					else if(cellColor.equals("92D050")|| cellColor.equals("99CC00")) {
+					else if(cellColor.equals("92D050") || cellColor.equals("99CC00") || cellColor.equals("00B050") || cellColor.equals("70AD47")) {
 						finishedProcess.add(j);
 						finishedProcessMap.put(j, i);
 						continue flag;

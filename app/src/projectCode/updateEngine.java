@@ -23,7 +23,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class updateEngine {
 	public static int addRows = 0;
 	public static int deleteRows = 0;
-	private static boolean testFlag = true;
+	private static boolean testFlag = false;
 	public static String updateEngine(String originalPath, String formatPath) throws Exception{
 		//change the file path format
 		originalPath = originalPath.replace("\\", "/");
@@ -212,7 +212,7 @@ public class updateEngine {
 //						InUseProcess.add(i);
 						continue flag;
 					}
-					else if(cellColor.equals("92D050") || cellColor.equals("99CC00")) {
+					else if(cellColor.equals("92D050") || cellColor.equals("99CC00") || cellColor.equals("00B050") || cellColor.equals("70AD47")) {
 						finishedProcess.add(j);
 						finishedProcessMap.put(j, i);
 //						finishedProcess.add(i);
