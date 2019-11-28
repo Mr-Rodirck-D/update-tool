@@ -78,7 +78,7 @@ public class formattedEngineChooser {
 					e1.printStackTrace();
 				}
 				JFileChooser jfc=new JFileChooser();
-				jfc.setCurrentDirectory(new File(DefaultPath + "\\Engine"));
+				jfc.setCurrentDirectory(new File(DefaultPath + "/Engine"));
 				jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);	//parameter for both files and directories
 				jfc.setFileFilter(new javax.swing.filechooser.FileFilter() {	//create a file filter to select only ".xlsx" file
 					public boolean accept(File f) {
@@ -154,7 +154,7 @@ public class formattedEngineChooser {
 							}
 						} catch (Exception e1) {
 							processingframe.dispose();
-							JOptionPane.showMessageDialog(frame, "Failed!", "Warning!", JOptionPane.WARNING_MESSAGE);
+							JOptionPane.showMessageDialog(frame, "Failed!" + e1.toString(), "Warning!", JOptionPane.WARNING_MESSAGE);
 							e1.printStackTrace();
 						} finally {
 							frame.dispose();

@@ -23,7 +23,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class updateEngine {
 	public static int addRows = 0;
 	public static int deleteRows = 0;
-	private static boolean testFlag = false;
+	private static boolean testFlag = true;
 	public static String updateEngine(String originalPath, String formatPath) throws Exception{
 		//change the file path format
 		originalPath = originalPath.replace("\\", "/");
