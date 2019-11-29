@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingWorker;
 
+import projectCode.ErrorLog;
 import projectCode.updateBattery;
 
 public class formattedBatteryChooser {
@@ -156,8 +157,10 @@ public class formattedBatteryChooser {
 							}
 						} catch (Exception e1) {
 							processingframe.dispose();
-							JOptionPane.showMessageDialog(frame, "Failed!" + e1.toString(), "Warning!", JOptionPane.WARNING_MESSAGE);
+							JOptionPane.showMessageDialog(frame, "Failed!", "Warning!", JOptionPane.WARNING_MESSAGE);
 							e1.printStackTrace();
+							ErrorLog errorLog = new ErrorLog("Error");
+							errorLog.createErrorLog(ErrorLog.getErrorInfo(e1));
 						} finally {
 							frame.dispose();
 						}
