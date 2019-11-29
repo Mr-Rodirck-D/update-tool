@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 public class MainFrame {
 
 	private JFrame frame;
-	public static String titleName = "Update Tracking APP_version 1.0";
+	public static String titleName = "Update Tracking APP_version 2.1";
 	/**
 	 * Launch the application.
 	 */
